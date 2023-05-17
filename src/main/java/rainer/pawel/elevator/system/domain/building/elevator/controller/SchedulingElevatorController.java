@@ -135,9 +135,4 @@ public class SchedulingElevatorController implements ElevatorController {
         elevators.values()
                 .forEach(elevator -> elevator.assignToBuilding(building));
     }
-
-    @Override
-    public Id getCorespondingBuildingId() {
-        return buildingId;
-    }
 }

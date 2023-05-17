@@ -120,6 +120,6 @@ class SchedulingElevatorControllerTest extends Specification {
 
         elevator.getId() >> Id.unique()
 
-        return elevator;
+        return elevator
     }
 }

@@ -130,7 +130,7 @@ class DirectionBasedElevatorTest extends Specification {
 
     void moveElevatorToFloor(int targetFloor) {
         if (elevator.getInfo().currentFloor() == Floor.of(targetFloor)) {
-            return;
+            return
         }
 
         elevator.handleCall(Floor.of(targetFloor))

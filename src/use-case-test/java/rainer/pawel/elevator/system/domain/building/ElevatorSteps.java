@@ -22,15 +22,11 @@ public class ElevatorSteps implements En {
                 });
 
         When("There is a call to elevator no. {int} to go to floor {int}",
-                (Integer elevatorId, Integer floor) -> {
-                    callElevator(context, elevatorId, floor);
-                }
+                (Integer elevatorId, Integer floor) -> callElevator(context, elevatorId, floor)
         );
 
         When("There is a call to go from {int} to {int} floor",
-                (Integer from, Integer to) -> {
-                    context.getBuilding().callElevator(from, to);
-                }
+                (Integer from, Integer to) -> context.getBuilding().callElevator(from, to)
         );
 
         Then("Elevator no. {int} should be on floor {int}",
@@ -62,9 +58,7 @@ public class ElevatorSteps implements En {
         );
 
         Then("Wait on floor",
-                () -> {
-                    makeNSteps(context, 1);
-                }
+                () -> makeNSteps(context, 1)
         );
 
     }

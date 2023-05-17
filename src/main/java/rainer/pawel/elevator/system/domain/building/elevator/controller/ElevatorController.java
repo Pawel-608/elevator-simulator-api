@@ -1,6 +1,5 @@
 package rainer.pawel.elevator.system.domain.building.elevator.controller;
 
-import rainer.pawel.elevator.system.domain.Id;
 import rainer.pawel.elevator.system.domain.building.Building;
 import rainer.pawel.elevator.system.domain.building.ElevatorsInfo;
 import rainer.pawel.elevator.system.domain.building.elevator.call.ExternalElevatorCall;
@@ -17,6 +16,4 @@ public interface ElevatorController {
     ElevatorsInfo getElevatorsState();
 
     void assignToBuilding(Building building);
-
-    Id getCorespondingBuildingId();
 }
