@@ -1,5 +1,9 @@
 package rainer.pawel.elevator.system.domain.building.elevator;
 
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
 import rainer.pawel.elevator.system.domain.Direction;
 import rainer.pawel.elevator.system.domain.Floor;
 import rainer.pawel.elevator.system.domain.Id;
@@ -7,9 +11,6 @@ import rainer.pawel.elevator.system.domain.TimeUnit;
 import rainer.pawel.elevator.system.domain.building.Building;
 import rainer.pawel.elevator.system.domain.building.elevator.call.ExternalElevatorCall;
 import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
-import java.util.List;
-import java.util.SortedSet;
-import java.util.TreeSet;
 
 
 import static rainer.pawel.elevator.system.domain.Direction.DOWN;

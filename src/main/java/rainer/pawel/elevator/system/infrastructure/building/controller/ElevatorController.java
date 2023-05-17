@@ -2,12 +2,6 @@ package rainer.pawel.elevator.system.infrastructure.building.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import rainer.pawel.elevator.system.application.BuildingService;
-import rainer.pawel.elevator.system.application.command.CallElevatorCommand;
-import rainer.pawel.elevator.system.application.command.CallSpecificElevatorCommand;
-import rainer.pawel.elevator.system.domain.Id;
-import rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound.CallElevatorDocument;
-import rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound.CallSpecificElevatorDocument;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +10,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.RequiredArgsConstructor;
+
+import rainer.pawel.elevator.system.application.BuildingService;
+import rainer.pawel.elevator.system.application.command.CallElevatorCommand;
+import rainer.pawel.elevator.system.application.command.CallSpecificElevatorCommand;
+import rainer.pawel.elevator.system.domain.Id;
+import rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound.CallElevatorDocument;
+import rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound.CallSpecificElevatorDocument;
 
 
 import static org.springframework.http.HttpStatus.NO_CONTENT;

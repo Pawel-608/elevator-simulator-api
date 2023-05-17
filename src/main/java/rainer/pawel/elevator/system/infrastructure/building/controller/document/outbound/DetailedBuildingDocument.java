@@ -1,8 +1,9 @@
 package rainer.pawel.elevator.system.infrastructure.building.controller.document.outbound;
 
+import java.util.List;
+
 import rainer.pawel.elevator.system.domain.Id;
 import rainer.pawel.elevator.system.domain.building.ElevatorsInfo;
-import java.util.List;
 
 public record DetailedBuildingDocument(
         Id buildingId,

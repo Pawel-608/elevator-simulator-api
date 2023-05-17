@@ -1,7 +1,8 @@
 package rainer.pawel.elevator.system.domain;
 
-import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
 import java.util.UUID;
+
+import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
 
 
 import static rainer.pawel.elevator.system.domain.util.EnsureUtils.ensureThat;

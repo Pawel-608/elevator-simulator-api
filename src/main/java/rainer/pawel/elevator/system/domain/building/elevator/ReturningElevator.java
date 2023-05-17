@@ -1,8 +1,8 @@
 package rainer.pawel.elevator.system.domain.building.elevator;
 
-import rainer.pawel.elevator.system.domain.TimeUnit;
-
 import lombok.RequiredArgsConstructor;
+
+import rainer.pawel.elevator.system.domain.TimeUnit;
 
 
 import static rainer.pawel.elevator.system.domain.TimeUnit.ZERO;

@@ -1,5 +1,12 @@
 package rainer.pawel.elevator.system.application;
 
+import java.util.List;
+import java.util.stream.Stream;
+
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+
 import rainer.pawel.elevator.system.application.command.CallElevatorCommand;
 import rainer.pawel.elevator.system.application.command.CallSpecificElevatorCommand;
 import rainer.pawel.elevator.system.application.command.CreateBuildingCommand;
@@ -12,12 +19,6 @@ import rainer.pawel.elevator.system.domain.building.elevator.ReturningElevator;
 import rainer.pawel.elevator.system.domain.building.elevator.controller.ElevatorController;
 import rainer.pawel.elevator.system.domain.building.elevator.controller.SchedulingElevatorController;
 import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
-import java.util.List;
-import java.util.stream.Stream;
-
-import org.springframework.stereotype.Service;
-
-import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor

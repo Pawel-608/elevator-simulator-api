@@ -1,13 +1,14 @@
 package rainer.pawel.elevator.system.infrastructure.building.persistance;
 
-import rainer.pawel.elevator.system.domain.Id;
-import rainer.pawel.elevator.system.domain.building.Building;
-import rainer.pawel.elevator.system.domain.building.BuildingRepository;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
+
+import rainer.pawel.elevator.system.domain.Id;
+import rainer.pawel.elevator.system.domain.building.Building;
+import rainer.pawel.elevator.system.domain.building.BuildingRepository;
 
 @Repository
 public class InMemoryBuildingRepository implements BuildingRepository {

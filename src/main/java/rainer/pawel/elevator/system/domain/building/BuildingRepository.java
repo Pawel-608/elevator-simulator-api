@@ -1,8 +1,9 @@
 package rainer.pawel.elevator.system.domain.building;
 
-import rainer.pawel.elevator.system.domain.Id;
 import java.util.List;
 import java.util.Optional;
+
+import rainer.pawel.elevator.system.domain.Id;
 
 public interface BuildingRepository {
 
