@@ -1,5 +1,6 @@
 package rainer.pawel.elevator.system.domain.building.elevator.controller
 
+import spock.lang.Specification
 
 import rainer.pawel.elevator.system.domain.Floor
 import rainer.pawel.elevator.system.domain.Id
@@ -8,7 +9,6 @@ import rainer.pawel.elevator.system.domain.building.Building
 import rainer.pawel.elevator.system.domain.building.elevator.Elevator
 import rainer.pawel.elevator.system.domain.building.elevator.call.ExternalElevatorCall
 import rainer.pawel.elevator.system.domain.building.elevator.call.InternalElevatorCall
-import spock.lang.Specification
 
 class SchedulingElevatorControllerTest extends Specification {
 

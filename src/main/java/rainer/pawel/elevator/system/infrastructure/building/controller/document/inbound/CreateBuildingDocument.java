@@ -1,10 +1,11 @@
 package rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import rainer.pawel.elevator.system.application.command.CreateBuildingCommand;
 
 import lombok.Getter;
 import lombok.Setter;
+
+import rainer.pawel.elevator.system.application.command.CreateBuildingCommand;
 
 
 import static io.swagger.v3.oas.annotations.media.Schema.RequiredMode.NOT_REQUIRED;

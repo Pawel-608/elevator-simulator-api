@@ -1,17 +1,17 @@
 package rainer.pawel.elevator.system.domain.building.elevator
 
+import spock.lang.Specification
 
 import rainer.pawel.elevator.system.domain.Floor
 import rainer.pawel.elevator.system.domain.TimeUnit
 import rainer.pawel.elevator.system.domain.building.Building
 import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException
-import spock.lang.Specification
 
 
 import static rainer.pawel.elevator.system.domain.TestData.floor
 import static rainer.pawel.elevator.system.domain.TestData.getElevatorCall
 
-class DirectionBasedElevatorTest extends Specification {
+class DirectionBasedElevatorSpec extends Specification {
 
     Building building = Stub()
 

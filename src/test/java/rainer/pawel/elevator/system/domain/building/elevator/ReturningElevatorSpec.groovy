@@ -1,10 +1,11 @@
 package rainer.pawel.elevator.system.domain.building.elevator
 
-import rainer.pawel.elevator.system.domain.TimeUnit
-import rainer.pawel.elevator.system.domain.building.Building
 import spock.lang.Specification
 
-class ReturningElevatorTest extends Specification {
+import rainer.pawel.elevator.system.domain.TimeUnit
+import rainer.pawel.elevator.system.domain.building.Building
+
+class ReturningElevatorSpec extends Specification {
 
     Building building = Mock()
 

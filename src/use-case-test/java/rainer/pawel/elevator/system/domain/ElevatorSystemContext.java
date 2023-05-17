@@ -1,10 +1,11 @@
 package rainer.pawel.elevator.system.domain;
 
-import rainer.pawel.elevator.system.domain.building.Building;
-import rainer.pawel.elevator.system.domain.building.elevator.ElevatorInfo;
 import java.util.List;
 
 import lombok.Getter;
+
+import rainer.pawel.elevator.system.domain.building.Building;
+import rainer.pawel.elevator.system.domain.building.elevator.ElevatorInfo;
 
 @Getter
 public class ElevatorSystemContext {

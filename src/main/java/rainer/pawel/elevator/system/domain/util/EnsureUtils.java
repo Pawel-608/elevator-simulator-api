@@ -1,9 +1,10 @@
 package rainer.pawel.elevator.system.domain.util;
 
-import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
 import java.util.function.Supplier;
 
 import lombok.NoArgsConstructor;
+
+import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
 
 
 import static lombok.AccessLevel.PRIVATE;

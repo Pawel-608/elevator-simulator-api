@@ -18,3 +18,4 @@ Feature: Elevators are called on the basis of the cost of the call
     And Make 12 steps
     Then Elevator no. 1 should be on floor 22 in the WAITING_ON_FLOOR state
     Then Elevator no. 2 should be on floor 0 in the IDLE state
+    Then Elevator no. 2 should be on floor 10 in the IDLE state

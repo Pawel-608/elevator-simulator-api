@@ -1,8 +1,8 @@
 package rainer.pawel.elevator.system.domain.building.util;
 
-import rainer.pawel.elevator.system.domain.ElevatorSystemContext;
-
 import lombok.NoArgsConstructor;
+
+import rainer.pawel.elevator.system.domain.ElevatorSystemContext;
 
 
 import static lombok.AccessLevel.PRIVATE;

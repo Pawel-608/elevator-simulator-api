@@ -1,14 +1,15 @@
 package rainer.pawel.elevator.system.domain.building;
 
 import io.cucumber.java8.En;
+import java.util.List;
+import java.util.stream.Stream;
+
 import rainer.pawel.elevator.system.domain.ElevatorSystemContext;
 import rainer.pawel.elevator.system.domain.TimeUnit;
 import rainer.pawel.elevator.system.domain.building.elevator.Elevator;
 import rainer.pawel.elevator.system.domain.building.elevator.ReturningElevator;
 import rainer.pawel.elevator.system.domain.building.elevator.controller.ElevatorController;
 import rainer.pawel.elevator.system.domain.building.elevator.controller.SchedulingElevatorController;
-import java.util.List;
-import java.util.stream.Stream;
 
 
 import static rainer.pawel.elevator.system.domain.building.util.StepsUtils.makeNSteps;
