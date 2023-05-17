@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.application;
+package rainer.pawel.elevator.system.application.command;
 
 import rainer.pawel.elevator.system.domain.Id;
 
