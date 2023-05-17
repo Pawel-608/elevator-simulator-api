@@ -10,7 +10,7 @@ import rainer.pawel.elevator.system.domain.building.elevator.Elevator
 import rainer.pawel.elevator.system.domain.building.elevator.call.ExternalElevatorCall
 import rainer.pawel.elevator.system.domain.building.elevator.call.InternalElevatorCall
 
-class SchedulingElevatorControllerTest extends Specification {
+class SchedulingElevatorControllerSpec extends Specification {
 
     Elevator elevator1 = getElevatorMock()
     Elevator elevator2 = getElevatorMock()
