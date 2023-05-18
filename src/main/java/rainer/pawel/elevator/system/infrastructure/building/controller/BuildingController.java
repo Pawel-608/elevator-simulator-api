@@ -25,7 +25,6 @@ import rainer.pawel.elevator.system.infrastructure.building.controller.document.
 import rainer.pawel.elevator.system.infrastructure.building.controller.document.outbound.DetailedBuildingDocument;
 
 
-import static org.springframework.http.HttpStatus.NO_CONTENT;
 import static org.springframework.http.HttpStatus.OK;
 
 @RequiredArgsConstructor
@@ -39,11 +38,11 @@ public class BuildingController {
 
     @Operation(summary = "Create a new building")
     @PostMapping("/buildings")
-    @ResponseStatus(NO_CONTENT)
-    void createBuilding(@RequestBody CreateBuildingDocument createBuildingDocument) {
+    @ResponseStatus(OK)
+    Id createBuilding(@RequestBody CreateBuildingDocument createBuildingDocument) {
         CreateBuildingCommand command = createBuildingDocument.toCommand();
 
-        buildingService.createBuilding(command);
+        return buildingService.createBuilding(command);
     }
 
     @Operation(summary = "Get all buildings ids")
