@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.infrastructure.swagger;
+package rainer.pawel.elevator.system.infrastructure.config.swagger;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;

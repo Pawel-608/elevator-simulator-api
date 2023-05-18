@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.infrastructure.jackson;
+package rainer.pawel.elevator.system.infrastructure.config.jackson;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;

@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.infrastructure.building.persistance;
+package rainer.pawel.elevator.system.infrastructure.persistance;
 
 import java.util.HashMap;
 import java.util.List;
