@@ -3,11 +3,15 @@ package rainer.pawel.elevator.system.infrastructure.building.controller;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.RequiredArgsConstructor;
+
+import rainer.pawel.elevator.system.application.BuildingService;
+import rainer.pawel.elevator.system.domain.Id;
 
 
 import static org.springframework.http.HttpStatus.NO_CONTENT;
@@ -17,10 +21,12 @@ import static org.springframework.http.HttpStatus.NO_CONTENT;
 @Tag(name = "Simulation controller")
 public class SimulationController {
 
-    @Operation(summary = "Make a step")
-    @PostMapping("/step")
-    @ResponseStatus(NO_CONTENT)
-    void makeStep() {
+    private final BuildingService buildingService;
 
+    @Operation(summary = "Make a step")
+    @PostMapping("/step/{building-id}")
+    @ResponseStatus(NO_CONTENT)
+    void makeStep(@PathVariable("building-id") Id buildingId) {
+        buildingService.makeStep(buildingId);
     }
 }

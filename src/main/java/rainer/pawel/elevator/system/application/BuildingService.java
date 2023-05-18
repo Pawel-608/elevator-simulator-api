@@ -49,6 +49,11 @@ public class BuildingService {
                 .callElevator(command.elevatorId(), command.toFloor());
     }
 
+    public void makeStep(Id buildingId) {
+        getBuilding(buildingId)
+                .makeStep();
+    }
+
     private Building getBuilding(Id buildingId) {
         return buildingRepository.find(buildingId)
                 .orElseThrow(() -> ElevatorSystemException.of("Cannot find building %s", buildingId));
