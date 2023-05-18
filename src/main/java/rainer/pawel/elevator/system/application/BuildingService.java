@@ -26,7 +26,7 @@ public class BuildingService {
 
     private final BuildingRepository buildingRepository;
 
-    public void createBuilding(CreateBuildingCommand command) {
+    public Id createBuilding(CreateBuildingCommand command) {
         List<? extends Elevator> elevators = Stream.generate(() -> 0)
                 .limit(command.elevatorsNumber())
                 .map(elevator -> new ReturningElevator(command.elevatorBaseFloorNumber(), TimeUnit.of(command.elevatorMaxTimeToBeInactive())))
@@ -37,6 +37,8 @@ public class BuildingService {
         Building building = new Building(elevatorController, command.floorsNumber());
 
         buildingRepository.save(building);
+
+        return building.getId();
     }
 
     public void callElevator(CallElevatorCommand command) {
