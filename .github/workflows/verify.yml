@@ -1,0 +1,19 @@
+name: Deployment
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+on: push
+
+jobs:
+  maven-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'openjdk'
+      - name: Run the Maven verify phase
+        run: mvn --batch-mode --update-snapshots verify
