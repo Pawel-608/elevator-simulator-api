@@ -42,6 +42,6 @@ public class ThreadSafeBuildingService extends BuildingService {
     }
 
     private Object getLock(Id buildingId) {
-        return buildingIdToLock.compute(buildingId, (k, v) -> v != null ? v : new Object());
+        return buildingIdToLock.computeIfAbsent(buildingId, (k) -> new Object());
     }
 }
