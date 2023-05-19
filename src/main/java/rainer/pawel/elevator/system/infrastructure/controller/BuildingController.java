@@ -21,6 +21,7 @@ import rainer.pawel.elevator.system.domain.building.BuildingRepository;
 import rainer.pawel.elevator.system.domain.building.elevator.ElevatorInfo;
 import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
 import rainer.pawel.elevator.system.infrastructure.controller.document.inbound.CreateBuildingDocument;
+import rainer.pawel.elevator.system.infrastructure.controller.document.outbound.BuildingCreatedDocument;
 import rainer.pawel.elevator.system.infrastructure.controller.document.outbound.BuildingDocument;
 import rainer.pawel.elevator.system.infrastructure.controller.document.outbound.DetailedBuildingDocument;
 
@@ -39,10 +40,12 @@ public class BuildingController {
     @Operation(summary = "Create a new building")
     @PostMapping("/buildings")
     @ResponseStatus(OK)
-    Id createBuilding(@RequestBody CreateBuildingDocument createBuildingDocument) {
+    BuildingCreatedDocument createBuilding(@RequestBody CreateBuildingDocument createBuildingDocument) {
         CreateBuildingCommand command = createBuildingDocument.toCommand();
 
-        return buildingService.createBuilding(command);
+        return new BuildingCreatedDocument(
+                buildingService.createBuilding(command)
+        );
     }
 
     @Operation(summary = "Get all buildings ids")
