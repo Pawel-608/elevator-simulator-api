@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.infrastructure.jackson;
+package rainer.pawel.elevator.system.infrastructure.config.jackson;
 
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;

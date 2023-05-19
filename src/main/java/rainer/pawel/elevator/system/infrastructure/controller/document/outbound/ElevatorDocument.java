@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.infrastructure.building.controller.document.outbound;
+package rainer.pawel.elevator.system.infrastructure.controller.document.outbound;
 
 import java.util.List;
 

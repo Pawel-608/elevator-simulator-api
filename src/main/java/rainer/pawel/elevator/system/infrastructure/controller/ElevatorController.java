@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.infrastructure.building.controller;
+package rainer.pawel.elevator.system.infrastructure.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -15,8 +15,8 @@ import rainer.pawel.elevator.system.application.BuildingService;
 import rainer.pawel.elevator.system.application.command.CallElevatorCommand;
 import rainer.pawel.elevator.system.application.command.CallSpecificElevatorCommand;
 import rainer.pawel.elevator.system.domain.Id;
-import rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound.CallElevatorDocument;
-import rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound.CallSpecificElevatorDocument;
+import rainer.pawel.elevator.system.infrastructure.controller.document.inbound.CallElevatorDocument;
+import rainer.pawel.elevator.system.infrastructure.controller.document.inbound.CallSpecificElevatorDocument;
 
 
 import static org.springframework.http.HttpStatus.NO_CONTENT;

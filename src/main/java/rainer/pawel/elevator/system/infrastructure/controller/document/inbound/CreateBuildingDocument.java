@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound;
+package rainer.pawel.elevator.system.infrastructure.controller.document.inbound;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 

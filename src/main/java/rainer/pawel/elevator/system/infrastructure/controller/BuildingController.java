@@ -1,4 +1,4 @@
-package rainer.pawel.elevator.system.infrastructure.building.controller;
+package rainer.pawel.elevator.system.infrastructure.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -20,9 +20,9 @@ import rainer.pawel.elevator.system.domain.building.Building;
 import rainer.pawel.elevator.system.domain.building.BuildingRepository;
 import rainer.pawel.elevator.system.domain.building.elevator.ElevatorInfo;
 import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
-import rainer.pawel.elevator.system.infrastructure.building.controller.document.inbound.CreateBuildingDocument;
-import rainer.pawel.elevator.system.infrastructure.building.controller.document.outbound.BuildingDocument;
-import rainer.pawel.elevator.system.infrastructure.building.controller.document.outbound.DetailedBuildingDocument;
+import rainer.pawel.elevator.system.infrastructure.controller.document.inbound.CreateBuildingDocument;
+import rainer.pawel.elevator.system.infrastructure.controller.document.outbound.BuildingDocument;
+import rainer.pawel.elevator.system.infrastructure.controller.document.outbound.DetailedBuildingDocument;
 
 
 import static org.springframework.http.HttpStatus.OK;
