@@ -3,8 +3,6 @@ package rainer.pawel.elevator.system.application;
 import java.util.List;
 import java.util.stream.Stream;
 
-import org.springframework.stereotype.Service;
-
 import lombok.RequiredArgsConstructor;
 
 import rainer.pawel.elevator.system.application.command.CallElevatorCommand;
@@ -20,7 +18,6 @@ import rainer.pawel.elevator.system.domain.building.elevator.controller.Elevator
 import rainer.pawel.elevator.system.domain.building.elevator.controller.SchedulingElevatorController;
 import rainer.pawel.elevator.system.domain.exception.ElevatorSystemException;
 
-@Service
 @RequiredArgsConstructor
 public class BuildingService {
 
