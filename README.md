@@ -68,21 +68,10 @@ isn't just a simple go `up`/`down` button
 It turned out that I did not take the time factor into account and actual algorithm I was able to create is far from ideal -
 I think I probably should stay with much simpler `up`/`down` panel as it would allow me to deliver 100% complete system
 
-Also, application is not thread safe (no thread safety + web interface = problem) what could cause moving simulation
-to invalid state
+I am not 100% sure ThreadSafeBuildingService is properly implemented
 
 ### What I would like to do to improve this system
 
 Request from corridor should look like: `building_id`, `from_floor`, `direction`
 
 Elevator should be referenced by its "index" in building, not its uuid
-
-To provide thread safety and persistence I would use message queue like kafka:
-- Receive http request
-- Produce event to kafka with key `building_id`
-- Consume events (one for building at the time)
-- Save event to db (here sql might work)
-
-But it is not trivial topic ;) Kafka probably would be overkill here, so I would need to check simpler
-solutions that would allow to process one event for building at the time (Maybe Spring events + synchronous listener? 
-but it will process one event at the time not one for building)
